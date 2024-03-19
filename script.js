@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         } catch (error) {
           calculation = 'Error';
         }
+      } else if (buttonText === 'DEL') {
+        calculation = calculation.slice(0, -1);
       } else {
         calculation += buttonText;
       }
